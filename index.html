@@ -1,1 +1,140 @@
-<!doctype html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Nout' Vietnam</title><link rel='manifest' href='manifest.webmanifest'><style>body{font-family:Arial;margin:0;background:#f5f5f4}header{background:#0F4C5C;color:#fff;padding:24px}section{padding:16px}.card{background:#fff;border-radius:14px;padding:14px;margin:10px 0}</style></head><body><header><h1>Nout' Vietnam</h1><p>7 voyageurs · 2→24 février 2027</p></header><section><div class='card'><h2>Bienvenue</h2><p>Carnet de voyage officiel.</p></div><div class='card'><h3>Itinéraire</h3><ol><li>Bangkok</li><li>Hué</li><li>Hội An</li><li>Da Nang</li><li>Can Tho</li><li>Saigon</li></ol></div><div class='card'><h3>Mode administrateur</h3><p>Mot de passe provisoire : <b>Nout2027!</b></p></div></section><script>if('serviceWorker' in navigator){navigator.serviceWorker.register('service-worker.js');}</script></body></html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nout' Vietnam 2027</title>
+
+  <meta name="theme-color" content="#0F766E">
+  <meta name="description" content="Carnet de voyage Vietnam 2027">
+
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon-192.png">
+  <link rel="apple-touch-icon" href="icon-192.png">
+
+  <style>
+    body{
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      background:#F4F7F6;
+      color:#1F2937;
+    }
+    header{
+      background:#0F766E;
+      color:white;
+      padding:22px;
+      text-align:center;
+    }
+    h1{margin:0;font-size:28px;}
+    .container{padding:18px;}
+    .card{
+      background:white;
+      border-radius:18px;
+      padding:18px;
+      margin-bottom:16px;
+      box-shadow:0 4px 10px rgba(0,0,0,.08);
+    }
+    .day{
+      color:#0F766E;
+      font-weight:bold;
+      margin-bottom:8px;
+    }
+    .price{
+      color:#B45309;
+      font-weight:bold;
+    }
+    footer{
+      text-align:center;
+      padding:30px;
+      color:#6B7280;
+      font-size:14px;
+    }
+    button{
+      width:100%;
+      padding:14px;
+      border:none;
+      border-radius:12px;
+      background:#0F766E;
+      color:white;
+      font-size:16px;
+      margin-top:10px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>🇻🇳 Nout' Vietnam</h1>
+  <p>Circuit du 3 au 25 février 2027</p>
+</header>
+
+<div class="container">
+
+  <div class="card">
+    <h2>✈️ Départ</h2>
+    <p><strong>Réunion → Bangkok</strong></p>
+    <p>3 février 2027</p>
+    <p>3 nuits à Bangkok avant le Vietnam.</p>
+  </div>
+
+  <div class="card">
+    <div class="day">7 au 10 février</div>
+    <h2>📍 Da Nang</h2>
+    <p>Plage, vieille ville de Hoi An, détente.</p>
+    <p class="price">Hôtel : ~60 €/nuit</p>
+  </div>
+
+  <div class="card">
+    <div class="day">10 au 13 février</div>
+    <h2>🏯 Hué</h2>
+    <p>Cité impériale, pagodes et croisière sur la rivière des Parfums.</p>
+  </div>
+
+  <div class="card">
+    <div class="day">13 au 17 février</div>
+    <h2>🌴 Quy Nhơn</h2>
+    <p>Ville côtière authentique, peu touristique.</p>
+  </div>
+
+  <div class="card">
+    <div class="day">17 au 21 février</div>
+    <h2>🏖️ Nha Trang</h2>
+    <p>Repos, marché local et excursion en bateau.</p>
+  </div>
+
+  <div class="card">
+    <div class="day">21 au 24 février</div>
+    <h2>🌆 Hô Chi Minh-Ville</h2>
+    <p>Marché Ben Thanh, poste centrale, cafés et derniers achats.</p>
+  </div>
+
+  <div class="card">
+    <h2>💰 Budget estimatif</h2>
+    <p>Hôtels : <strong>1 200 €</strong></p>
+    <p>Repas : <strong>350 €</strong></p>
+    <p>Transports : <strong>250 €</strong></p>
+    <hr>
+    <p><strong>Total (hors vols) : 1 800 €</strong></p>
+  </div>
+
+  <div class="card">
+    <h2>📱 Installer l'application</h2>
+    <p>Sur iPhone : Partager → Ajouter à l'écran d'accueil.</p>
+    <button onclick="alert('Version PWA prête !')">Tester l'application</button>
+  </div>
+
+</div>
+
+<footer>
+  Nout' Vietnam • Version 1.0
+</footer>
+
+<script>
+if ('serviceWorker' in navigator){
+  navigator.serviceWorker.register('./sw.js');
+}
+</script>
+
+</body>
+</html>
